@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+.container {
+  background-color: #ccc;
+  padding: 10px;
+  
+  display: flex;
+  flex-direction: row;
+  /* main axis align */
+  justify-content: center;
+  /* cross axis align */
+  align-items: center;
+}
+
+.item {
+  background-color: #f1425d;
+  padding: 30px;
+  margin: 30px;
+  color: #fff;
+  font-size: 40px;
+  
+  /* occupy all the space you can, given 1 */
+  /* can also do this is the 'flex' property */
+  flex-grow: 0
+}
+
+.i2 {
+  height: 200px;
+  flex-basis: 300px;
+  /* element will not shrink on smaller view port size, 0 */
+  flex-shrink: 0;
+  /* can write all properties in one property named 'flex' */
+  /*  flex: 0 0 300px  */
+}
+
+.i3 {
+  order: 1;
+  flex: 1;
+}
+
+.i4 {
+  /* will override align-items for this single element  */
+  align-self: flex-end;
+  order: -1;
+}

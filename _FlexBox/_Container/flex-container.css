@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+.container {
+  background-color: #ccc;
+  padding: 10px;
+  
+  display: flex;
+  flex-direction: row;
+  /* main axis align */
+  justify-content: center;
+  /* cross axis align */
+  align-items: center;
+}
+
+.item {
+  background-color: #f1425d;
+  padding: 30px;
+  margin: 30px;
+  color: #fff;
+  font-size: 40px;
+}
+
+.i2 {
+  height: 200px;
+}
+
+.i4 {
+  font-size: 70px;
+}
